@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900">
+    <div class="px-10 py-10 md:px-30 md:py-10">
+      <nav class="flex justify-between">
+        <a href="#" class="text-blue-300 text-4xl font-bold border-2 border-blue-300 hover:bg-violet-600 transform hover:scale-110 transition duration-300">Srushti Khandelwal</a>
+
+        <!-- <Desktop> -->
+        <ul class="md:flex space-x-10 hidden">
+          <li><button onclick="showSection('home')" class="text-white hover:bg-blue-400">Home</button></li>
+          <li><button onclick="showSection('projects')" class="text-white hover:bg-blue-400">Projects</button></li>
+          <li><button onclick="showSection('about')" class="text-white hover:bg-blue-400">About Me</button></li>
+          <li><button onclick="showSection('contact')" class="text-white hover:bg-blue-400">Contact</button></li>
+          <li><button onclick="showSection('hireme')" class="text-white bg-sky-500 px-6 py-2 rounded-full border-2 hover:bg-green-400">Hire Me</button></li>
+        </ul>
+
+        <!-- MOBILE -->
+        <a href="#" class="text-white text-3xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <ul class="flex flex-col space-y-col md:hidden bg-sky-500">
+          <li><button onclick="showSection('home')" class="text-white hover:bg-blue-400">Home</button></li>
+          <li><button onclick="showSection('projects')" class="text-white hover:bg-blue-400">Projects</button></li>
+          <li><button onclick="showSection('about')" class="text-white hover:bg-blue-400">About Me</button></li>
+          <li><button onclick="showSection('contact')" class="text-white hover:bg-blue-400">Contact</button></li>
+          <li><button onclick="showSection('hireme')" class="text-white bg-sky-500 px-6 py-2 rounded-full border-2 hover:bg-green-400">Hire Me</button></li>
+        </ul>
+      </nav>
+
+      <section id="home" class="relative min-h-[80vh] flex flex-col items-center justify-center text-center text-white px-4 pt-10 overflow-hidden">
+
+        <!-- Floating icons -->
+        <img src="html-file_8297258.png" class="w-20 absolute top-10 left-6 opacity-70 animate-bounce" alt="HTML">
+        <img src="css_5486420.png" class="w-20 absolute top-20 right-10 opacity-70 animate-bounce" alt="CSS">
+        <img src="js_1088544.png" class="w-20 absolute bottom-10 left-14 opacity-70 animate-bounce" alt="JS">
+        <img src="github_1322053.png" class="w-20 absolute bottom-20 right-12 opacity-70 animate-bounce" alt="GitHub">
+      
+        <!-- Main profile image -->
+        <img src="6051733_61529.jpg" alt="Srushti's Photo" class="w-50 h-50 rounded-full object-cover mb-6 border-4 border-sky-400 shadow-lg" />
+      
+        <!-- Intro -->
+        <h1 class="text-6xl font-extrabold tracking-wide">Hi, I'm Srushti</h1>
+        <p class="mt-4 text-xl text-blue-300">Aspiring Frontend Developer & Tech Enthusiast.</p>
+      
+        <!-- Button -->
+        <button onclick="showSection('contact')" class="mt-6 px-6 py-3 bg-sky-500 text-white rounded-full hover:bg-green-400 transition">
+          Let's Connect
+        </button>
+      </section>
+      
+      
+
+      
+
+      <section id="about" class="bg-slate-800 text-white py-16 px-8 md:px-20 hidden">
+        <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+        <p class="text-lg max-w-3xl mx-auto leading-relaxed text-center text-gray-300">
+          I'm a first-year Computer Science Engineering student with a growing passion for web development and design.
+          I enjoy turning ideas into interactive digital experiences and constantly learning new technologies.
+          Right now, I'm exploring HTML, CSS, Tailwind, and JavaScript.
+        </p>
+      </section>
+
+      <section id="projects" class="bg-slate-800 text-white py-16 px-8 md:px-20 hidden">
+        <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
+        <p class="text-center text-gray-300 mb-10">Here's a showcase of my recent work.</p>
+      
+        <div class="bg-slate-700 p-4 rounded-lg mb-8">
+          <img src="portfolio1.png" alt="Portfolio Website" class="w-full max-w-md mx-auto mb-4 rounded">
+          <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-300 mb-2">A simple personal portfolio website built using HTML, Tailwind CSS, and JavaScript.</p>
+        </div>
+      
+        
+        <div class="bg-slate-700 p-4 rounded-lg mb-8">
+          <img src="calculator.png" alt="Calculator Project Screenshot" class="w-full max-w-md mx-auto mb-4 rounded">
+
+          <h3 class="text-2xl font-semibold mb-2">Basic Calculator</h3>
+          <p class="text-gray-300 mb-2">A simple calculator web app using HTML, CSS & JavaScript to perform basic arithmetic operations.</p>
+          <a href="https://github.com/SrushtiKhandelwal/basic_calculator" target="_blank" class="inline-block mt-2 text-sky-400 hover:text-green-400">View Code</a>
+          
+        </div>
+        
+      </section>
+      
+
+      <section id="contact" class="bg-slate-800 text-white py-16 px-8 md:px-20 hidden">
+        <h2 class="text-4xl font-bold mb-6 text-center">Contact Me</h2>
+        <p class="text-gray-300 text-center mb-10">Feel free to reach out!</p>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+          <div class="mt-10 flex justify-center gap-20 text-3xl">
+            <a href="https://github.com/SrushtiKhandelwal" target="_blank" class="text-white hover:text-sky-400 transition">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="www.linkedin.com/in/srushtikhandelwal" target="_blank" class="text-white hover:text-blue-500 transition">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/srushti.khandelwal" target="_blank" class="text-white hover:text-blue-500 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/@SrushtiKha74108" target="_blank" class="text-white hover:text-blue-400 transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="hireme" class="bg-slate-800 text-white py-20 px-8 md:px-20 hidden">
+        <h2 class="text-4xl font-bold mb-6 text-center">Hire Me</h2>
+        <p class="text-center text-xl max-w-2xl mx-auto mb-10">
+          A passionate frontend developer.
+        </p>
+        
+        </div>
+      </section>
+
+      <!-- Mobile -->
+      <ul id="mobile-menu" class="hidden flex-col items-center space-y-4 bg-slate-800 py-4 text-white md:hidden">
+        <li><a href="#" class="hover:text-sky-400">Home</a></li>
+        <li><a href="#" class="hover:text-sky-400">Projects</a></li>
+        <li><a href="#" class="hover:text-sky-400">Services</a></li>
+        <li><a href="#" class="hover:text-sky-400">Contact</a></li>
+        <li><a href="#" class="bg-sky-500 px-4 py-2 rounded-full hover:bg-green-500">Hire Me</a></li>
+      </ul>
+    </div>
+
+    <footer class="bg-slate-900 text-center text-gray-400 py-6 text-sm">
+      © 2025 Srushti Khandelwal. All rights reserved.
+    </footer>
+
+    <script>
+      function showSection(id) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+          section.classList.add('hidden');
+        });
+
+        const target = document.getElementById(id);
+        if (target) {
+          target.classList.remove('hidden');
+        }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>
